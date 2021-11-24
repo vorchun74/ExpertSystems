@@ -1,0 +1,53 @@
+.navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  padding: 3rem 1rem 1rem;
+  background-color: rgb(37, 37, 37);
+
+  &__title {
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    list-style: none;
+
+    li {
+      margin-bottom: 2rem;
+
+      a {
+        position: relative;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 20px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          border-radius: 5px;
+          background-color: #fff;
+
+          transition: width .2s linear;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

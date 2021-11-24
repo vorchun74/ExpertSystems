@@ -1,0 +1,39 @@
+.intro {
+  &__subtitle {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    margin: 0;
+  }
+  p {
+    margin-bottom: .5rem;
+  }
+}
+.diagramcontent {
+  &__inner {
+    &__diagram {
+      width: 100%;
+      max-width: 50%;
+      height: auto;
+      float: right;
+      margin-left: .5rem;
+    }
+  }
+}
+.imagecontent {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    &__image {
+      float: right;
+      min-width: 300px;
+      width: 35%;
+    }
+    &__subtext {
+      margin-top: .5rem;
+      font-size: .8rem;
+    }
+  }
+}
